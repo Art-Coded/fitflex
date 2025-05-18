@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/coach_item_background"
+    android:padding="16dp"
+    android:layout_marginBottom="16dp"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tvCoachName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvCoachSpecialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specialty: Weightlifting"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvClassLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: Main Hall"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvCoachSchedule"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule: Mon-Fri, 9 AM - 5 PM"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnBookCoach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Class"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/blue"
+            android:paddingHorizontal="12dp"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+</LinearLayout>

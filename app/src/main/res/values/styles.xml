@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="colorAccent">@color/blue</item> <!-- For the buttons -->
+    </style>
+    <style name="WhiteDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="colorBackgroundFloating">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="buttonBarPositiveButtonStyle">@style/WhiteDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/WhiteDialogButton</item>
+    </style>
+
+    <style name="WhiteDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="QrDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <!-- Make dialog background transparent so our custom shape shows -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+
+        <!-- Text colors -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+
+        <!-- Button styles -->
+        <item name="buttonBarPositiveButtonStyle">@style/QrDialogButton</item>
+
+        <!-- Remove default dialog padding -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="QrDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AdminDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="buttonBarPositiveButtonStyle">@style/AdminDialogButton.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AdminDialogButton.Negative</item>
+    </style>
+
+    <style name="AdminDialogButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="BlackTextInputTheme" parent="ThemeOverlay.MaterialComponents.TextInputEditText">
+        <item name="android:textColor">@color/black</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+        <item name="colorControlHighlight">@color/black</item>
+    </style>
+    <style name="AdminDialogButton.Positive" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+
+    <style name="AdminDialogButton.Negative" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+</resources>

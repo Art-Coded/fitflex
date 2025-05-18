@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="20dp"
+    android:background="@color/white"
+    tools:context=".PromosActivity">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promotions &amp; Discounts"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#004A80"
+        android:fontFamily="@font/tavirajsemibold"
+        android:layout_gravity="center"
+        android:paddingBottom="8dp"/>
+
+    <!-- Search Bar -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Search"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:drawableTint="@color/black"
+        android:background="@android:drawable/editbox_background"
+        android:padding="8dp"/>
+
+    <!-- Category Tabs -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_gravity="center"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/members"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Membership"
+                android:backgroundTint="#005A90"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:fontFamily="@font/tavirajsemibold"
+                android:padding="10dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classes"
+
+                android:textSize="12sp"
+                android:fontFamily="@font/tavirajsemibold"
+                android:backgroundTint="#005A90"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"
+                android:layout_marginEnd="8dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Training"
+
+                android:textSize="12sp"
+                android:fontFamily="@font/tavirajsemibold"
+                android:backgroundTint="#005A90"
+                android:textColor="#FFFFFF"
+                android:padding="10dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- ViewPager for Promotions -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Dot Indicator -->
+    <!-- Grid Layout for Promo Boxes -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:background="#2C82C9"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:background="#D3D3D3"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:background="#D3D3D3"/>
+
+        <!-- Promo with Image -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:background="#2C82C9"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal Training Offers"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Session Free!"
+                android:textColor="#FFFFFF"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+    </GridLayout>
+
+</LinearLayout>

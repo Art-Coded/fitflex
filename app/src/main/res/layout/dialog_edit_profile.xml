@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@android:color/white">
+
+        <!-- Name Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray"
+            android:hint="Enter your name"
+
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext_background_white"/>
+
+        <!-- User Handle Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etHandle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray"
+            android:hint="Enter username"
+            android:inputType="text"
+            android:background="@drawable/edittext_background_white"/>
+
+        <!-- Phone Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray"
+            android:hint="Enter phone number"
+            android:inputType="phone"
+            android:background="@drawable/edittext_background_white"/>
+
+        <!-- Address Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray"
+            android:hint="Enter address"
+            android:inputType="textPostalAddress"
+            android:background="@drawable/edittext_background_white"/>
+
+        <!-- Email Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_background_white"/>
+    </LinearLayout>
+</ScrollView>

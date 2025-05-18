@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "858420401544",
+    "project_id": "fitflex-fitness-studio",
+    "storage_bucket": "fitflex-fitness-studio.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858420401544:android:2d304dc7bd2f3dd312963d",
+        "android_client_info": {
+          "package_name": "com.example.fitflexfitnessstudio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

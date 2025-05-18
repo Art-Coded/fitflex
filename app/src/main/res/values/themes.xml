@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.FitFlexFitnessStudio" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary color for buttons -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary color for buttons -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Custom button style -->
+        <item name="materialButtonStyle">@style/Widget.FitFlexFitnessStudio.Button</item>
+
+        <!-- Custom TextInputLayout style -->
+        <item name="textInputStyle">@style/Widget.FitFlexFitnessStudio.TextInputLayout</item>
+    </style>
+
+    <!-- Custom button style -->
+    <style name="Widget.FitFlexFitnessStudio.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">?attr/colorPrimary</item> <!-- Button background color -->
+        <item name="android:textColor">?attr/colorOnPrimary</item> <!-- Button text color -->
+        <item name="cornerRadius">8dp</item> <!-- Rounded corners -->
+    </style>
+
+    <!-- Custom TextInputLayout style -->
+    <style name="Widget.FitFlexFitnessStudio.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/white</item> <!-- White background -->
+        <item name="boxStrokeColor">@color/blue</item> <!-- Stroke color (e.g., blue) -->
+        <item name="hintTextColor">@color/DGREY</item> <!-- Hint text color (e.g., gray) -->
+        <item name="android:textColorHint">@color/DGREY</item> <!-- Hint text color (e.g., gray) -->
+    </style>
+</resources>
